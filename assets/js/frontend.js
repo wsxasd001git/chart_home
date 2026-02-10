@@ -231,12 +231,10 @@
                                 return items[0].label;
                             },
                             label: function (context) {
-                                var idx = context.dataIndex;
-                                var d = data[idx];
                                 if (context.dataset.label === 'SC TOP 10') {
-                                    return 'SC TOP 10: ' + context.parsed.y.toFixed(2) + '% (' + formatMoney(d.sc_top10) + ' \u20BD)';
+                                    return 'SC TOP 10: ' + context.parsed.y.toFixed(2) + '%';
                                 } else {
-                                    return 'MCFTR: ' + context.parsed.y.toFixed(2) + '% (' + formatMoney(d.mcftr) + ')';
+                                    return 'MCFTR: ' + context.parsed.y.toFixed(2) + '%';
                                 }
                             },
                         },
